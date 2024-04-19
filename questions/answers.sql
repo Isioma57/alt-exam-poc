@@ -139,7 +139,7 @@ GROUP BY
 	location                                                   -- Group the results by customer location
 ORDER BY 
 	checkout_count DESC                                        -- Order the results by the checkout count in descending order
-LIMIT 1;                                                       -- Limit the results to only the top location
+LIMIT 1;                                                           -- Limit the results to only the top location
 
 
 
