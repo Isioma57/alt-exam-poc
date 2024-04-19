@@ -65,7 +65,7 @@ FROM '/data/line_items.csv' DELIMITER ',' CSV HEADER;
 
 
 
--- setup the events table following the examle provided
+-- setup the events table following the example provided
 create table if not exists ALT_SCHOOL.EVENTS
 (
     event_id bigint PRIMARY KEY,
