@@ -151,7 +151,7 @@ LIMIT 1;                                                           -- Limit the 
 -- This query calculates the number of 'add to cart' or 'remove from cart' events for each customer
 -- who has not completed a checkout, and then orders the results to find the customers with the most of such events.
 SELECT 
-    e.customer_id,                                          -- Selecting the customer ID from the events table
+    e.customer_id AS customer_id,                                          -- Selecting the customer ID from the events table
     COUNT(*) AS num_events                                  -- Counting the total number of qualifying events for each customer
 FROM 
     alt_school.events e                                     -- From the events table, aliased as 'e' for ease of reference
